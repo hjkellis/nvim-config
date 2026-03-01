@@ -1,12 +1,47 @@
 return {
   "nvim-lualine/lualine.nvim",
-  dependencies = { "echasnovski/mini.icons" },
   config = function()
+
+    local mono_bg = "#1e1e1e"
+    local mono_fg = "#c0c0c0"
+
+    local monochrome_theme = {
+      normal = {
+        a = { bg = mono_bg, fg = mono_fg },
+        b = { bg = mono_bg, fg = mono_fg },
+        c = { bg = mono_bg, fg = mono_fg },
+      },
+      insert = {
+        a = { bg = mono_bg, fg = mono_fg },
+        b = { bg = mono_bg, fg = mono_fg },
+        c = { bg = mono_bg, fg = mono_fg },
+      },
+      visual = {
+        a = { bg = mono_bg, fg = mono_fg },
+        b = { bg = mono_bg, fg = mono_fg },
+        c = { bg = mono_bg, fg = mono_fg },
+      },
+      replace = {
+        a = { bg = mono_bg, fg = mono_fg },
+        b = { bg = mono_bg, fg = mono_fg },
+        c = { bg = mono_bg, fg = mono_fg },
+      },
+      command = {
+        a = { bg = mono_bg, fg = mono_fg },
+        b = { bg = mono_bg, fg = mono_fg },
+        c = { bg = mono_bg, fg = mono_fg },
+      },
+      inactive = {
+        a = { bg = mono_bg, fg = mono_fg },
+        b = { bg = mono_bg, fg = mono_fg },
+        c = { bg = mono_bg, fg = mono_fg },
+      },
+    }
 
     require("lualine").setup({
       options = {
         icons_enabled = false,
-        theme = "auto",
+        theme = monochrome_theme,
         component_separators = "|",
         section_separators = "",
       },
