@@ -39,4 +39,10 @@ return {
       vim.g.vimtex_quickfix_ignore_filters = {'Underfull', 'Overfull', 'LaTeX Font Warning', 'Missing character'}
     end
   },
+  {
+    'chomosuke/typst-preview.nvim',
+    lazy = false, -- or ft = 'typst'
+    version = '1.*',
+    opts = {}, -- lazy.nvim will implicitly calls `setup {}`
+  }
 }
