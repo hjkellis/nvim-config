@@ -75,7 +75,8 @@ vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
   end,
 })
 
--- vim.cmd("colorscheme retrobox")
+vim.cmd("colorscheme retrobox")
 vim.api.nvim_set_hl(0, "Function", { fg = "#65A4A8" })
 -- colorcolumn color
 vim.api.nvim_set_hl(0, "ColorColumn", { bg = "#444444" })
+		vim.api.nvim_set_hl(0, "Normal", { bg = "#000000" })

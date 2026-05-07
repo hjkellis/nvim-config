@@ -16,7 +16,7 @@ return {
 					layout_config = {
 						anchor = "NE",
 						height = 0.99,
-						width = 0.66,
+						width = 0.75,
 						preview_width = 0.5,
 					},
 				},
