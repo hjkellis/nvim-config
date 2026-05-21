@@ -56,10 +56,10 @@ vim.keymap.set("n", "<leader>cc", ":ToggleColorColumn<CR>",
   { desc = "toggle colorcolumn" })
 
 -- ai terminal
-vim.keymap.set("n", "<leader>ai", function()
-  vim.cmd("term")
-
-  vim.cmd("syntax off")
-  vim.cmd("hi clear")
-  vim.cmd("set termguicolors&")
-end, { desc = "open terminal for AI" })
+-- vim.keymap.set("n", "<leader>ai", function()
+--   vim.cmd("term")
+--
+--   vim.cmd("syntax off")
+--   vim.cmd("hi clear")
+--   vim.cmd("set termguicolors&")
+-- end, { desc = "open terminal for AI" })
